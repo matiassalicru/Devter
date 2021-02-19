@@ -7,7 +7,6 @@ export default function AppLayout({ children }) {
         <main>{children}</main>
       </div>
 
-
       <style jsx>{styles}</style>
       <style jsx>{globalStyles}</style>
     </>

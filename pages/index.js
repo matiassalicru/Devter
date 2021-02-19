@@ -10,12 +10,12 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [user, setUser] = useState(undefined);
 
-  //Effect que ejecuta una acción para persistir el state de autenticación
+  // Effect que ejecuta una acción para persistir el state de autenticación
   useEffect(() => {
     onAuthStateChanged(setUser);
   }, []);
 
-  //Lanza el login con github y setea el state user con info de github
+  // Lanza el login con github y setea el state user con info de github
   const handleClick = () => {
     loginWithGitHub()
       .then((user) => {
@@ -30,7 +30,6 @@ export default function Home() {
         <title>Devter 🐤</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <AppLayout>
         <section>
           <img src="./devter-logo.png" alt="Logo" />
@@ -55,7 +54,6 @@ export default function Home() {
           </div>
         </section>
       </AppLayout>
-
       <style jsx>{`
         img {
           width: 120px;
