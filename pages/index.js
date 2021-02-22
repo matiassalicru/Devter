@@ -1,11 +1,15 @@
-import Head from "next/head";
-import AppLayout from "../components/AppLayout";
-import Button from "../components/Button";
-import GitHub from "../components/Icons/GitHub";
-import { colors } from "../styles/theme";
-
-import { loginWithGitHub, onAuthStateChanged } from "../firebase/client";
 import { useState, useEffect } from "react";
+import Head from "next/head";
+
+import Avatar from "components/Avatar";
+import AppLayout from "components/AppLayout";
+import Button from "components/Button";
+import GitHub from "components/Icons/GitHub";
+import Logo from "components/Icons/Logo";
+
+import { colors } from "styles/theme";
+
+import { loginWithGitHub, onAuthStateChanged } from "firebase/client";
 
 export default function Home() {
   const [user, setUser] = useState(undefined);
@@ -30,9 +34,10 @@ export default function Home() {
         <title>Devter 🐤</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <AppLayout>
         <section>
-          <img src="./devter-logo.png" alt="Logo" />
+          <Logo width="100" />
           <h1>Devter</h1>
           <h2>
             Talk about development <br />
@@ -47,13 +52,17 @@ export default function Home() {
             )}
             {user && user.avatar && (
               <div>
-                <img src={user.avatar} alt="foto usuario" />
-                <strong>{user.username}</strong>
+                <Avatar
+                  text={user.username}
+                  src={user.avatar}
+                  alt={user.username}
+                />
               </div>
             )}
           </div>
         </section>
       </AppLayout>
+
       <style jsx>{`
         img {
           width: 120px;
@@ -71,14 +80,15 @@ export default function Home() {
         }
 
         h1 {
-          color: ${colors.secondary};
+          color: ${colors.primary};
           font-size: 24px;
+          font-weight: 800;
           margin-bottom: 16px;
           margin: 0;
         }
 
         h2 {
-          color: ${colors.primary};
+          color: ${colors.secondary};
           font-size: 21px;
           margin: 0;
           text-align: center;
