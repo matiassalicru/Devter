@@ -28,6 +28,106 @@ const timeline = [
   
   Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
   },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
+  {
+    id: "2",
+    username: "d4nidev",
+    name: "Daniel de la Cruz",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1083714591752941568/Q7LnIANs_reasonably_small.jpg",
+    message: `Abro paraguas Paraguas
+  
+  Clean Code es un libro obsoleto que en 2020, con los paradigmas de desarrollo de software que manejamos, puede hacerte más daño que beneficio.`,
+  },
 ];
 
 export default (req, res) => {

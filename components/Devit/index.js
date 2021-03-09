@@ -1,16 +1,20 @@
 import Avatar from "components/Avatar";
 
-const Devit = ({ avatar, username, message, id }) => {
+const Devit = ({ avatar, userName, content, id, userId, createdAt }) => {
   return (
     <>
       <article key={id}>
         <div>
-          <Avatar alt={username} src={avatar} />
+          <Avatar alt={userName} src={avatar} />
         </div>
 
         <section>
-          <strong>{username}</strong>
-          <p>{message}</p>
+          <header>
+            <strong>{userName}</strong>
+            <span> - </span>
+            <date>{createdAt}</date>
+          </header>
+          <p>{content}</p>
         </section>
       </article>
 
@@ -18,7 +22,7 @@ const Devit = ({ avatar, username, message, id }) => {
         article {
           display: flex;
           padding: 10px 15px;
-          border-bottom: 2px solid #eaf7ff;
+          border-bottom: 2px solid #eee;
         }
 
         div {
@@ -27,6 +31,11 @@ const Devit = ({ avatar, username, message, id }) => {
 
         p {
           margin: 0;
+        }
+
+        date {
+          color: #555;
+          font-size: 14px;
         }
       `}</style>
     </>

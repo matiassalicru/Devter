@@ -1,15 +1,16 @@
 import AppLayout from "components/AppLayout";
 import Devit from "components/Devit";
+import { fetchLatestsDevits } from "firebase/client";
+import { useUser } from "hooks/useUser";
 import { useState, useEffect } from "react";
 
 const HomePage = () => {
   const [timeline, setTimeline] = useState([]);
+  const user = useUser();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/statuses/home_timeline")
-      .then((res) => res.json())
-      .then(setTimeline);
-  }, []);
+    user && fetchLatestsDevits().then(setTimeline);
+  }, [user]);
 
   return (
     <>
@@ -18,15 +19,19 @@ const HomePage = () => {
           <h2>Inicio</h2>
         </header>
         <section>
-          {timeline.map((devit) => (
-            <Devit
-              key={devit.id}
-              username={devit.username}
-              avatar={devit.avatar}
-              message={devit.message}
-              id={devit.id}
-            />
-          ))}
+          {timeline.map(
+            ({ id, userName, avatar, content, userId, createdAt }) => (
+              <Devit
+                avatar={avatar}
+                content={content}
+                createdAt={createdAt}
+                id={id}
+                key={id}
+                userId={userId}
+                userName={userName}
+              />
+            )
+          )}
         </section>
         <nav></nav>
       </AppLayout>
@@ -38,25 +43,25 @@ const HomePage = () => {
             align-items: center;
             position: sticky;
             height: 49px;
+            backdrop-filter: blur(5px);
+            background: #ffffffaa;
             top: 0;
             width: 100%;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #eee;
           }
 
           h2 {
             font-weight: 800;
             font-size: 20px;
-          }
-
-          section {
-            padding-top: 49px;
+            padding-left: 15px;
           }
 
           nav {
             position: sticky;
             bottom: 0;
+            background: #ffffff;
             width: 100%;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #eee;
             height: 49px;
           }
         `}
