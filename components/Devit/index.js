@@ -1,6 +1,9 @@
 import Avatar from "components/Avatar";
+import useTimeAgo from "hooks/useTimeAgo";
 
 const Devit = ({ avatar, userName, content, id, userId, createdAt }) => {
+  const timeago = useTimeAgo(createdAt);
+
   return (
     <>
       <article key={id}>
@@ -12,7 +15,7 @@ const Devit = ({ avatar, userName, content, id, userId, createdAt }) => {
           <header>
             <strong>{userName}</strong>
             <span> - </span>
-            <date>{createdAt}</date>
+            <small>{timeago}</small>
           </header>
           <p>{content}</p>
         </section>
