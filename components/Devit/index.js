@@ -15,7 +15,7 @@ const Devit = ({ avatar, userName, content, id, userId, createdAt }) => {
           <header>
             <strong>{userName}</strong>
             <span> - </span>
-            <small>{timeago}</small>
+            <date>{timeago}</date>
           </header>
           <p>{content}</p>
         </section>
